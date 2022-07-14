@@ -18,6 +18,7 @@
   --btn-bg-cl: #188ce8;
   --border-head-cl: #ececec;
   --border-card-cl: #eeeeee;
+  --icon-bg-cl: #afb1b8;
 }
 
 /* reset styles */
@@ -172,6 +173,34 @@ body {
   gap: 50px;
 }
 
+.contacts-link {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 31px;
+}
+
+.icon {
+  display: inline-block;
+  content: '';
+  fill: currentColor;
+  margin-right: 10px;
+  align-items: center;
+}
+.mail-icon {
+  width: 16px;
+  height: 12px;
+}
+.phone-icon {
+  width: 10px;
+  height: 16px;
+}
+.contact-link:hover,
+.mail-icon:hover,
+.tel-icon:hover {
+  color: var(--accent-bg-cl);
+}
+
 .contacts-mail {
   font-weight: 500;
   line-height: calc(16 / 14);
@@ -247,6 +276,15 @@ body {
   align-items: center;
 }
 
+/* .feature-item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background: var(--light-bg-cl);
+  border-radius: 4px;
+  margin-bottom: 30px;
+} */
+
 .feature-title {
   font-weight: 700;
   font-size: 14px;
@@ -314,6 +352,36 @@ body {
   text-align: center;
 }
 
+/* Clients */
+.clients {
+  padding-top: 41px;
+}
+
+.clients-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.clients-link {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-bg-cl);
+  border-radius: 4px;
+  background-color: var(--white-bg-cl);
+}
+
+.clients-icon {
+  fill: var(--icon-bg-cl);
+}
+
+.clients-link:hover .clients-icon {
+  fill: var(--accent-bg-cl);
+}
 /* FOOTER */
 
 .footer {
