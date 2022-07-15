@@ -78,8 +78,8 @@ address {
 }
 
 .footer-address {
-  font-style: normal;
-  margin-top: 20px;
+  font-style: normal;  
+  display: flex;
 }
 
 body {
@@ -119,6 +119,7 @@ body {
 
 .footer-logo {
   color: var(--white-txt-cl);
+  margin-bottom: 20px;
 }
 
 .logo,
@@ -438,6 +439,15 @@ body {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  
+}
+
+.footer-part {
+  display: flex;
+  flex-direction: column;
+  margin-right: 70px;
 }
 
 .footer {
@@ -448,7 +458,7 @@ body {
 
 .footer-link {
   line-height: calc(24 / 14);
-  color: var(--white-txt-cl);
+  color: var(--white-txt-cl);  
 }
 
 .footer-item {
@@ -470,14 +480,38 @@ body {
   color: var(--accent-txt-cl);
 }
 
-.footer-socials {
+.switch-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.switch-title {
+  color: var(--white-txt-cl);
+  text-align: center;
+  margin-bottom: 21px;
+}
+
+.switch-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.switch-link {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 44px;
+  height: 44px;
+  fill: var(--white-bg-cl);
+  background-color: var(--dark-icon-bg-cl);
+  border-radius: 50%;
 }
 
-.footer-tiltel {
-  color: var(--white-txt-cl);
+.switch-link:hover,
+.switch-link:focus {
+  background-color: #2196f3;
 }
 /* PORTFOLIO */
 
@@ -546,7 +580,7 @@ body {
 }
 
 .product-link {
-display: block;
+  display: block;
 }
 .product-link:hover,
 .product-link:focus {
