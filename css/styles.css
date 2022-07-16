@@ -78,8 +78,8 @@ address {
 }
 
 .footer-address {
-  font-style: normal;  
-  display: flex;
+  font-style: normal;
+  margin-top: 20px;
 }
 
 body {
@@ -183,11 +183,10 @@ body {
 }
 
 .icon {
-  display: inline-block;
   fill: currentColor;
   margin-right: 10px;
-  align-items: center;
 }
+
 .mail-icon {
   width: 16px;
   height: 12px;
@@ -202,6 +201,8 @@ body {
 } */
 
 .contacts-mail {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
@@ -217,6 +218,8 @@ body {
 }
 
 .contacts-phone {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
@@ -375,7 +378,6 @@ body {
 
 .socials {
   display: flex;
-  align-items: center;
   justify-content: center;
   gap: 10px;
 }
@@ -386,24 +388,21 @@ body {
   justify-content: center;
   width: 44px;
   height: 44px;
-  fill: var(--icon-bg-cl);
-  background-color: var(--white-txt-cl);
+  color: var(--icon-bg-cl);
   border-radius: 50%;
 }
 
 .socials-link:hover,
 .socials-link:focus {
+  color: var(--white-bg-cl);
   background-color: var(--accent-bg-cl);
 }
 
-.socials-link:hover .socials-icon {
-  fill: var(--white-bg-cl);
+.socials-icon {
+  fill: currentColor;
 }
 
 /* Clients */
-.clients {
-  padding-top: 41px;
-}
 
 .clients-list {
   display: flex;
@@ -419,34 +418,27 @@ body {
   align-items: center;
   border: 1px solid var(--icon-bg-cl);
   border-radius: 4px;
-  background-color: var(--white-bg-cl);
+  color: var(--icon-bg-cl);
 }
 
 .clients-icon {
-  fill: var(--icon-bg-cl);
+  fill: currentColor;
 }
 
 .clients-link:hover,
 .clients-link:focus {
+  color: var(--accent-bg-cl);
   border-color: var(--accent-bg-cl);
 }
 
-.clients-icon:hover,
-.clients-icon:focus {
-  fill: var(--accent-bg-cl);
-}
 /* FOOTER */
 
 .footer-container {
   display: flex;
   align-items: baseline;
-  justify-content: flex-start;
-  
 }
 
 .footer-part {
-  display: flex;
-  flex-direction: column;
   margin-right: 70px;
 }
 
@@ -458,7 +450,7 @@ body {
 
 .footer-link {
   line-height: calc(24 / 14);
-  color: var(--white-txt-cl);  
+  color: var(--white-txt-cl);
 }
 
 .footer-item {
@@ -480,15 +472,13 @@ body {
   color: var(--accent-txt-cl);
 }
 
-.switch-footer {
-  display: flex;
-  flex-direction: column;
-}
-
 .switch-title {
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
   color: var(--white-txt-cl);
-  text-align: center;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
+
 }
 
 .switch-list {
