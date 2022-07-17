@@ -172,6 +172,7 @@ body {
 
 .contacts {
   display: flex;
+  align-items: center;
   gap: 30px;
 }
 
@@ -209,7 +210,6 @@ body {
   color: var(--descr-txt-cl);
   padding-top: 32px;
   padding-bottom: 31px;
-  display: block;
 }
 
 .contacts-mail:hover,
@@ -226,7 +226,6 @@ body {
   color: var(--descr-txt-cl);
   padding-top: 32px;
   padding-bottom: 31px;
-  display: block;
 }
 
 .contacts-phone:hover,
@@ -478,7 +477,6 @@ body {
   text-transform: uppercase;
   color: var(--white-txt-cl);
   margin-bottom: 20px;
-
 }
 
 .switch-list {
