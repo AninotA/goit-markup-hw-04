@@ -156,6 +156,7 @@ body {
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 31px;
+  display: block;
 }
 
 .header-link:hover,
